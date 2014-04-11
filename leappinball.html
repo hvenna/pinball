@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Leap Gesture Recognization Proof of Concept</title>
+
+<script src="./scripts/jquery.min.js"></script>
+<!--This where the magic happens. Open leapout.js file to know the secrets-->
+<script src="./scripts/leapout.js"></script>
+<!-- Initiliazing the HTML 5 Canvas for LEAP to draw out the structure-->
+<script>
+  $(document).ready(function() {
+    LeapOut.init('#canvas', '#debug');
+  });
+</script>
+<!-- Basic CSS, this should be moved to a seperate file once the CSS code increases-->
+<style>
+  h1 {
+    padding-top: 100px;
+    color: #999;
+  }
+  #debug {
+    font-size: 13px;
+    color: #666;
+  }
+</style>
+</head>
+
+<body>
+  <h1>Leap Motion</h1>
+  <h3>Developed by <ul><li>Harshitha Venna</li><li>Shravan Marpu</li><li>Shiva Alapathi</li></ul>Project Guide: Prof. Ravi Shankar</h3>
+  <div id="debug">Game Over! Click to restart.</div>
+  <canvas id="canvas" width="1351" height="682" style="width: 1351px; height: 682px; position: absolute; left: 0px; top: 0px;"></canvas>
+
+
+</body></html>
